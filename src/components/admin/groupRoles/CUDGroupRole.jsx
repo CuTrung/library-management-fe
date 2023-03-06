@@ -199,7 +199,7 @@ const CUDGroupRole = (props) => {
 
                         <h3 className='my-3'>Set role for group</h3>
 
-                        <Form.Select ref={group} onChange={(e) => handleSelectGroup(e.target.value)} className='mb-3' aria-label="Default select example">
+                        <Form.Select name='group' ref={group} onChange={(e) => handleSelectGroup(e.target.value)} className='mb-3' aria-label="Default select example">
                             <option hidden value=''>Choose Group</option>
                             {groupRoles.length > 0 && groupRoles.map((item, index) => {
                                 return (
